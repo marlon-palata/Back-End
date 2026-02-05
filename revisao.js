@@ -34,7 +34,7 @@ class Pessoa {
     }
 }
 
-const pessoa1 = new Pessoa("Ana", 25);
+const pessoa1 = new Pessoa("Marlon", 18);
 pessoa1.apresentar();
 
 
@@ -57,11 +57,11 @@ class Produto {
     }
 
     mostrarPreco() {
-        console.log(`Produto: ${this.nome} | Preço: R$ ${this.preco}`);
+        console.log(`Produto: ${this.nome} | Preço: R$ ${this.preco.toFixed(2)}`);
     }
 }
 
-const produto1 = new Produto("Caneta", 2.50);
+const produto1 = new Produto("MacBook", 4500.70);
 produto1.mostrarPreco();
 
 
